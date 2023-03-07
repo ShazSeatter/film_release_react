@@ -1,9 +1,12 @@
 import React from "react";
 
-function Films() {
+function Films({name, url}) {
     return (
         <>
-        <h1>film list</h1>
+        <ul>
+            <li><a href={url} target="_blank">{name}</a></li>
+        </ul>
+
         </>
     );
 }

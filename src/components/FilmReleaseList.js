@@ -1,12 +1,19 @@
 import React from "react";
 import Film from '../components/Films';
+import UpcomingFilmRelease from '../components/UpcomingFilmRelease';
 
-function FilmReleaseList() {
+
+function FilmReleaseList({films}) {
+    const filmNodes = films.map(film => (
+        <Film key={film.id} url={film.url} name={film.name}/>
+    ))
 
     return (
         <>
         <h1>FilmReleaseList</h1>
-        <Film></Film>
+        {filmNodes}
+        <hr/>
+        <UpcomingFilmRelease></UpcomingFilmRelease>
         </>
     )
 }
