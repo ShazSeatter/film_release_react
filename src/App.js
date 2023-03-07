@@ -1,8 +1,9 @@
 import './App.css';
+import FilmReleaseBox from './containers/FilmReleaseBox'
 
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <FilmReleaseBox></FilmReleaseBox>
   );
 }
 
