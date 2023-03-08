@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import FilmReleaseList from '../components/FilmReleaseList';
+import UpcomingFilmRelease from '../components/UpcomingFilmRelease';
 
 function FilmReleaseBox() {
     const [films, setFilms] = useState([
@@ -34,8 +35,9 @@ function FilmReleaseBox() {
         <h1>Upcoming Film Releases for UK</h1>
         <hr></hr>
         <FilmReleaseList films={films}/>
+        <UpcomingFilmRelease/>
+        <hr/>
         </>
     );
 }
-
 export default FilmReleaseBox; 

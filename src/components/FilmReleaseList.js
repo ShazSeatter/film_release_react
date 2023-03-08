@@ -1,6 +1,5 @@
 import React from "react";
 import Film from '../components/Films';
-import UpcomingFilmRelease from '../components/UpcomingFilmRelease';
 
 
 function FilmReleaseList({films}) {
@@ -10,10 +9,8 @@ function FilmReleaseList({films}) {
 
     return (
         <>
-        <h1>FilmReleaseList</h1>
+        <h1>Film Release List</h1>
         {filmNodes}
-        <hr/>
-        <UpcomingFilmRelease></UpcomingFilmRelease>
         </>
     )
 }
